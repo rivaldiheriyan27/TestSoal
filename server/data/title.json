@@ -1,0 +1,12 @@
+[
+    {
+        "title" : "Buku Cinta",
+        "author" : "Hafizduin",
+        "isbn": 12345612
+    },
+    {
+        "title" : "YTTA",
+        "author" : "Heriyan",
+        "isbn": 12345613
+    }
+]

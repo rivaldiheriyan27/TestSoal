@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Soal No 3</title>
+    </head>
+    <body>
+        <div id="response"></div>
+
+        <script>
+            async function fetchData() {
+            try {
+                const response = await fetch('http://jsonplaceholder.typicode.com/posts');
+                const data = await response.json();
+                console.log(data);
+            } catch (error) {
+                console.error(error);
+            }
+            }
+
+            fetchData();
+        </script>
+    </body>
+</html>

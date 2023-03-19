@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Soal No 2</title>
+    </head>
+    <body>
+        <div id="myLabelContainer">
+            <label for="myLabel">Label</label>
+            <span id="myLabel">John</span>
+            <button id="myButton">Ubah</button>
+        </div>
+
+        <script>
+            const myData = [
+            { "name": "John", "age": 30 },
+            { "name": "Jane", "age": 25 }
+            ];
+            const myLabel = document.getElementById('myLabel');
+            const myButton = document.getElementById('myButton');
+
+            // Menampilkan nama di MyLabel
+            myLabel.textContent = myData[0].name;
+
+            // Fungsi tombol berubah nama seusai yang dibuat
+            myButton.addEventListener('click', () => {
+                console.log(myData[0].name)
+            myData[0].name = "Berubah namanya";
+            myLabel.textContent = myData[0].name;
+            });
+        </script>
+    </body>
+</html>
